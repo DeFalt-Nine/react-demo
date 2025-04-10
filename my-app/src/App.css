@@ -1,0 +1,122 @@
+/* Existing styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.count-button,
+.my-button,
+.vote-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.count-button {
+  background-color: #50d6ff;
+  color: white;
+}
+
+.count-button:hover {
+  background-color: #a455a7;
+}
+
+.my-button {
+  background-color: #a455a7;
+  color: white;
+}
+
+.my-button:hover {
+  background-color: hsl(59, 88%, 69%);
+  color: #a455a7;
+}
+
+.vote-button-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 10px;              
+  margin-top: 20px;       
+}
+
+.vote-button {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; 
+}
+
+.vote-button:hover {
+  background-color: rgb(15, 15, 15); 
+  color: #ebe71c; 
+  transform: scale(1.1); 
+}
+
+.vote-button:active {
+  transform: scale(1); 
+}
+
+.winner {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.winner::after {
+  content: ' 👑'; 
+  font-size: 1.2em;
+  color: gold;
+}
